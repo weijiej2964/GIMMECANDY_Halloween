@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Animations;
+
 public class ControlPlayer : MonoBehaviour
 {
     public float moveSpeed = 1f;
@@ -11,10 +13,16 @@ public class ControlPlayer : MonoBehaviour
     //vector stores 2 values, x & y
     Vector2 movementInput;
     Rigidbody2D rigidBod;
+
+    SpriteRenderer spriteRenderer;
+
+    Animator animator;
     // Start is called before the first frame update
     void Start()
     {
         rigidBod = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -37,7 +45,11 @@ public class ControlPlayer : MonoBehaviour
             {
                 success = TryMove(new Vector2(0,movementInput.y));
             }
+            animator.SetBool("isMoving",success);
         }
+        else
+            animator.SetBool("isMoving",false);
+        spriteRenderer.flipX = (movementInput.x < 0);
     }
 
     public bool TryMove(Vector2 direction)

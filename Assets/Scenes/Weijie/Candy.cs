@@ -8,6 +8,9 @@ public class Candy : MonoBehaviour
     public TextMeshProUGUI CandyText;
 
     private int _candyAmount;
+
+    [SerializeField] private AudioSource getCandySFX;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -22,6 +25,7 @@ public class Candy : MonoBehaviour
 
    public void IncreaseCandyAmount(int amount)
     {
+        getCandySFX.Play();
         _candyAmount += amount;
     }
 }

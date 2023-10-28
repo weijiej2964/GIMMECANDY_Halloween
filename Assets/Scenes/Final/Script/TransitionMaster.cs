@@ -8,7 +8,7 @@ public class TransitionMaster : MonoBehaviour
 
     public Animator transition;
 
-    public float transitionTime = 1f; 
+    public float transitionTime = 1f;
 
     // Update is called once per frame
     void Update()
@@ -31,4 +31,6 @@ public class TransitionMaster : MonoBehaviour
         //Load Scene
         SceneManager.LoadScene(scene);
     }
+
+
 }

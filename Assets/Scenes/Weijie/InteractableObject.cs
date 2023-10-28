@@ -6,11 +6,13 @@ public class InteractableObject : CollidableObject
 {
     private bool z_Interacted = false;
     private bool z_DialogueComplete = false;
-    public GameObject DialogueBox;
     private Dialogue dialogue;
 
+    public GameObject DialogueBox;
     public string[] lines;
 
+    public Candy CandyScore; 
+    public int CandyReward; 
     
     protected override void OnCollided(GameObject collidedObject)
     {
@@ -38,6 +40,11 @@ public class InteractableObject : CollidableObject
     public void SetCompleted(bool z)
     {
         z_DialogueComplete = z;
+        if(z == true)
+        {
+            CandyScore.IncreaseCandyAmount(CandyReward);
+            CandyScore.UpdateCandyAmount();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)

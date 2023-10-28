@@ -32,6 +32,7 @@ public class InteractableObject : CollidableObject
             GameObject newDialogueObject = Instantiate(DialogueBox, new Vector3(0,300f,0f), Quaternion.identity);
             newDialogueObject.transform.SetParent(canvas.transform, false);
             newDialogueObject.transform.localScale = Vector3.one;
+            newDialogueObject.SetActive(true);
             dialogue = newDialogueObject.GetComponent<Dialogue>();
 
             dialogue.setLines(lines);

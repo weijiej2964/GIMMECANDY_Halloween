@@ -60,7 +60,7 @@ public class InteractableObject : CollidableObject
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!z_DialogueComplete)
+        if (!z_DialogueComplete && z_Interacted == true)
         {
             ExitDialogueSFX.Play();
             newDialogueObject.SetActive(false);

@@ -45,10 +45,14 @@ public class ControlPlayer : MonoBehaviour
             {
                 success = TryMove(new Vector2(0,movementInput.y));
             }
-            animator.SetBool("isMoving",success);
+            Debug.Log(success);
+            animator.SetBool("isMoving",!success);
+        
         }
-        else
+        else{
+            Debug.Log("isMoving is false");
             animator.SetBool("isMoving",false);
+        }
         spriteRenderer.flipX = (movementInput.x < 0);
     }
 

@@ -10,11 +10,13 @@ public class InteractableObject : CollidableObject
 
     public Canvas canvas; 
     public GameObject DialogueBox;
+    private GameObject newDialogueObject;
     public string[] lines;
 
     public Candy CandyScore; 
     public int CandyReward;
 
+    [SerializeField] private AudioSource ExitDialogueSFX; 
 
 
     protected override void OnCollided(GameObject collidedObject)
@@ -29,9 +31,10 @@ public class InteractableObject : CollidableObject
     {
         if (!z_Interacted)
         {
-            GameObject newDialogueObject = Instantiate(DialogueBox, new Vector3(0,300f,0f), Quaternion.identity);
+            newDialogueObject = Instantiate(DialogueBox, new Vector3(0,300f,0f), Quaternion.identity);
             newDialogueObject.transform.SetParent(canvas.transform, false);
             newDialogueObject.transform.localScale = Vector3.one;
+            newDialogueObject.SetActive(true);
             dialogue = newDialogueObject.GetComponent<Dialogue>();
 
             dialogue.setLines(lines);
@@ -59,7 +62,8 @@ public class InteractableObject : CollidableObject
     {
         if (!z_DialogueComplete)
         {
-            DialogueBox.SetActive(false);
+            ExitDialogueSFX.Play();
+            newDialogueObject.SetActive(false);
             z_Interacted = false;
         }
        

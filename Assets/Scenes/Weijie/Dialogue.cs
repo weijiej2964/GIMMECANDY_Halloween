@@ -8,14 +8,14 @@ using UnityEngine;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI TextComponent;
-    private string[] Lines;
     public float TextSpeed;
 
     private InteractableObject interactableObject;
-
     private int _index;
+    private string[] Lines;
 
-    
+    [SerializeField] private AudioSource textPopSFX; 
+
 
     // Start is called before the first frame update
     void Start()
@@ -48,6 +48,7 @@ public class Dialogue : MonoBehaviour
         foreach (char c in Lines[_index].ToCharArray()) 
         {
             TextComponent.text += c;
+            textPopSFX.Play();
             yield return new WaitForSeconds(TextSpeed); 
             
         }
@@ -64,8 +65,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             interactableObject.SetCompleted(true);
-            Destroy(gameObject); 
-
+            Destroy(gameObject);
         }
     }
 
@@ -79,6 +79,7 @@ public class Dialogue : MonoBehaviour
     {
         interactableObject = obj;
     }
+
 
 
 }

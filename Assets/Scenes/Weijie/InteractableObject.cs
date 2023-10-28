@@ -8,12 +8,15 @@ public class InteractableObject : CollidableObject
     private bool z_DialogueComplete = false;
     private Dialogue dialogue;
 
+    public Canvas canvas; 
     public GameObject DialogueBox;
     public string[] lines;
 
     public Candy CandyScore; 
-    public int CandyReward; 
-    
+    public int CandyReward;
+
+
+
     protected override void OnCollided(GameObject collidedObject)
     {
         if(Input.GetKey(KeyCode.E))
@@ -24,18 +27,23 @@ public class InteractableObject : CollidableObject
 
     private void OnInteract()
     {
-        if(!z_Interacted)
+        if (!z_Interacted)
         {
-            DialogueBox.SetActive(true);
-            dialogue = DialogueBox.GetComponent<Dialogue>();
+            GameObject newDialogueObject = Instantiate(DialogueBox, new Vector3(0,300f,0f), Quaternion.identity);
+            newDialogueObject.transform.SetParent(canvas.transform, false);
+            newDialogueObject.transform.localScale = Vector3.one;
+            dialogue = newDialogueObject.GetComponent<Dialogue>();
+
             dialogue.setLines(lines);
-            dialogue.setInteractableObject(this);
+            dialogue.setInteractableObject(this.gameObject.GetComponent<InteractableObject>());
+
             dialogue.StartDialogue();
-            z_Interacted = true; 
+            z_Interacted = true;
         }
-        
+
 
     }
+
 
     public void SetCompleted(bool z)
     {

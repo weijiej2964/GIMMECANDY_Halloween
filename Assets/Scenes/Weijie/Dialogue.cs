@@ -64,7 +64,7 @@ public class Dialogue : MonoBehaviour
         else
         {
             interactableObject.SetCompleted(true);
-            gameObject.SetActive(false); 
+            Destroy(gameObject); 
 
         }
     }

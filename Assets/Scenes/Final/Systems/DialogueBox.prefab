@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TextComponent: {fileID: 6086854607875160453}
-  TextSpeed: 0.08
+  TextSpeed: 0.07
   textPopSFX: {fileID: 5336906854742986261}
 --- !u!82 &5336906854742986261
 AudioSource:

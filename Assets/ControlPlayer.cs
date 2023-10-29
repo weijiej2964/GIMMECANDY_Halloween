@@ -79,4 +79,9 @@ public class ControlPlayer : MonoBehaviour
         movementInput = movementVal.Get<Vector2>();
 
     }
+
+    public void PlayerDeathAnim()
+    {
+        animator.SetTrigger("CandyRanout");
+    }
 }

@@ -6,6 +6,9 @@ using UnityEngine;
 public class Candy : MonoBehaviour
 {
     public TextMeshProUGUI CandyText;
+    public GameObject GameoverPanel;
+    public TextMeshProUGUI FinalCandyText;
+    public ControlPlayer Player;
 
     private int _candyAmount;
 
@@ -32,6 +35,24 @@ public class Candy : MonoBehaviour
     public void DecreaseCandyAmount(int amount)
     {
         _candyAmount -= amount;
+        if( _candyAmount < 0 ) 
+        {
+            StartCoroutine(Gameover());
+        }
     }
 
+    public int getCandyAmount()
+    {
+        return _candyAmount;
+    }
+
+    IEnumerator Gameover()
+    {
+        Player.moveSpeed = 0;
+        Player.PlayerDeathAnim();
+
+        yield return new WaitForSeconds(1.5f);
+
+        GameoverPanel.SetActive(true );
+    }
 }

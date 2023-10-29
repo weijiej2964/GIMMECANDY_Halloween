@@ -34,24 +34,25 @@ public class ControlPlayer : MonoBehaviour
     private void FixedUpdate()
     {
         bool success = true;
-        if(movementInput != Vector2.zero)
+        if (movementInput != Vector2.zero)
         {
             success = TryMove(movementInput);
-        }
-        if(!success)
-        {
-            success = TryMove(new Vector2(movementInput.x,0));
-            if(!success)
+
+            if (!success)
             {
-                success = TryMove(new Vector2(0,movementInput.y));
+                success = TryMove(new Vector2(movementInput.x, 0));
+
+                if (!success)
+                {
+                    success = TryMove(new Vector2(0, movementInput.y));
+                }
             }
-            Debug.Log(success);
-            animator.SetBool("isMoving",success);
-        
+
+            animator.SetBool("isMoving", success);
         }
-        else{
-            Debug.Log("isMoving is false");
-            animator.SetBool("isMoving",false);
+        else
+        {
+            animator.SetBool("isMoving", false);
         }
         spriteRenderer.flipX = (movementInput.x < 0);
     }

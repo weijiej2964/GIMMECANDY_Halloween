@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.AI;
+
 public class Enemy : MonoBehaviour
 {
     [SerializeField] Transform target;
     [SerializeField] Transform[] patrolPoints;
     [SerializeField] Transform Player;
+    public Animator animator;
 
     public float lineOfSite; 
     NavMeshAgent agent;
@@ -29,12 +32,33 @@ public class Enemy : MonoBehaviour
         if (distanceFromPlayer < lineOfSite)
         {
             agent.SetDestination(Player.position);
+            if(transform.position.x < Player.transform.position.x) 
+            {
+                animator.SetBool("WalkingLeft", false);
+                animator.SetBool("WalkingRight", true);
+            }
+            else
+            {
+                animator.SetBool("WalkingRight", false);
+                animator.SetBool("WalkingLeft", true);
+            }
         }
         else
         {
-
             agent.SetDestination(target.position);
+            if (transform.position.x < target.transform.position.x)
+            {
+                animator.SetBool("WalkingLeft", false);
+                animator.SetBool("WalkingRight", true);
+            }
+            else
+            {
+                animator.SetBool("WalkingRight", false);
+                animator.SetBool("WalkingLeft", true);
+            }
         }
+
+        
 
     }
 
@@ -70,7 +94,9 @@ public class Enemy : MonoBehaviour
     {
         float temp = agent.speed; 
         agent.speed = 0;
+        animator.SetBool("HitPlayer", true);
         yield return new WaitForSeconds(5);
+        animator.SetBool("HitPlayer", false);
         SetRandomPatrolPoint();
         agent.speed = temp;
     }

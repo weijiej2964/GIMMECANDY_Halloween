@@ -6,7 +6,7 @@ Creators: Weijie Jiang, Rachel Briskman, Sanila Chowdhury, & Maida Kucevic
 -----
 
 ### How to play our game:
-* You as a trick or treater will be going around houses getting as much candy as you can. 
+* You as a trick or treater will be going around houses getting as much candy as you can. You have 5 minutes to do so.
 * For every candy you get, your score will increase.
 * While you’re trick or treating, avoid monsters that will try to steal your candy.
 * If you lose all your candy, the game will be over.

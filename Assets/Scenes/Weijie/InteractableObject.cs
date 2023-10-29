@@ -29,7 +29,7 @@ public class InteractableObject : CollidableObject
 
     private void OnInteract()
     {
-        if (!z_Interacted)
+        if (!z_DialogueComplete && !z_Interacted)
         {
             newDialogueObject = Instantiate(DialogueBox, new Vector3(0,300f,0f), Quaternion.identity);
             newDialogueObject.transform.SetParent(canvas.transform, false);

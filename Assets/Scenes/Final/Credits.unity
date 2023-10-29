@@ -148,16 +148,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54731416}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1568381336}
+  m_Father: {fileID: 542329201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 148.21277}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54731418
@@ -185,13 +185,8 @@ MonoBehaviour:
 
     Protagonist Art: Penzilla (itch.io)
 
-    Map Art: Stardew
-    Valley - ConcernedApe
-
-    Candy Art: Unity Asset Store
-
-    Wooden GUI: Unity
-    Asset Store
+    Enemies Art: ElvGames
+    (itch.io)
 
 
     Player Movement Code: Chris Tutorials (YT)
@@ -200,16 +195,42 @@ MonoBehaviour:
     NavMesh by H8man
 
 
-    BG Music: Spooks of Halloween Town (Kingdom Hearts)
-
-
-    Gain
-    Candy SFX: Super Mario Bros. (64)
+    Candy Art: Unity Asset Store
 
 
 
+    Map Art: Stardew Valley
+    - ConcernedApe
+
+    Tiny RPG Town Environment: Unity Asset Store
+
+    2D Pixel
+    art pack - Rousette: Unity Asset Store
 
 
+
+    BGM for Credit & Menu: This Is
+    Halloween (Undertale by Toby Fox)
+
+    BGM for Main: Happy Comedy Halloween Party
+    Dance for Kids Children (Undertale by Toby Fox)
+
+    BGM for Game over: KL Music
+    Box Game Over II (Undertale by Toby Fox)
+
+    Gain Candy SFX: Undertale by Toby
+    Fox
+
+    Kids laughing (Undertale by Toby Fox)
+
+    Resetting houses (Undertale
+    by Toby Fox)
+
+    Walking/transition/button/dialogue: Casual game SFX from Unity
+    Asset Store
+
+
+    Wooden GUI: Unity Asset Store
 
 '
   m_isRightToLeft: 0
@@ -238,8 +259,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -274,7 +295,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -32.671936, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -463,6 +484,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 54731417}
   - {fileID: 1568381336}
   m_Father: {fileID: 2109179543}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -733,7 +755,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1900850532}
-  - {fileID: 54731417}
   - {fileID: 1830493131}
   - {fileID: 720451093}
   m_Father: {fileID: 542329201}
@@ -756,7 +777,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.60784316}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Totem : InteractableObject
 {
-    public List<InteractableObject> Interactables; 
+    public List<InteractableObject> Interactables;
+    [SerializeField] private AudioSource TotemSFX; 
+    
     public override void SetCompleted(bool z)
     {
         if (z)
@@ -13,6 +15,7 @@ public class Totem : InteractableObject
             {
                 interactable.SetCompleted(false);
             }
+            TotemSFX.Play();
         }
 
     }

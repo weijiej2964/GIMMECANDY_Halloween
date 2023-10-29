@@ -10,7 +10,7 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI TextComponent;
     public float TextSpeed;
 
-    private InteractableObject interactableObject;
+    private GameObject interactableObject;
     private int _index;
     private string[] Lines;
 
@@ -64,7 +64,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            interactableObject.SetCompleted(true);
+            interactableObject.GetComponent<InteractableObject>().SetCompleted(true);
             Destroy(gameObject);
         }
     }
@@ -75,7 +75,7 @@ public class Dialogue : MonoBehaviour
 
     }
 
-    public void setInteractableObject(InteractableObject obj)
+    public void setInteractableObject(GameObject obj)
     {
         interactableObject = obj;
     }

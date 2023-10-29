@@ -38,7 +38,7 @@ public class InteractableObject : CollidableObject
             dialogue = newDialogueObject.GetComponent<Dialogue>();
 
             dialogue.setLines(lines);
-            dialogue.setInteractableObject(this.gameObject.GetComponent<InteractableObject>());
+            dialogue.setInteractableObject(gameObject);
 
             dialogue.StartDialogue();
             z_Interacted = true;
@@ -48,13 +48,14 @@ public class InteractableObject : CollidableObject
     }
 
 
-    public void SetCompleted(bool z)
+    public virtual void SetCompleted(bool z)
     {
         z_DialogueComplete = z;
         if(z == true)
         {
             CandyScore.IncreaseCandyAmount(CandyReward);
             CandyScore.UpdateCandyAmount();
+            z_Interacted = false; 
         }
     }
 
@@ -63,7 +64,7 @@ public class InteractableObject : CollidableObject
         if (!z_DialogueComplete && z_Interacted == true)
         {
             ExitDialogueSFX.Play();
-            newDialogueObject.SetActive(false);
+            Destroy(newDialogueObject);
             z_Interacted = false;
         }
        

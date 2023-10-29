@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform target;
     [SerializeField] Transform[] patrolPoints;
     [SerializeField] Transform Player;
+    [SerializeField] AudioSource LaughSFX; 
     public Animator animator;
     public Candy CandyScore;
 
@@ -79,6 +80,7 @@ public class Enemy : MonoBehaviour
         if(collision.tag == "Player")
         {
             StartCoroutine(CapturedPlayer());
+            LaughSFX.Play();
         }
     }
 

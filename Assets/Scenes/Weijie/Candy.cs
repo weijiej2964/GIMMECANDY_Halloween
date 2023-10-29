@@ -28,4 +28,10 @@ public class Candy : MonoBehaviour
         getCandySFX.Play();
         _candyAmount += amount;
     }
+
+    public void DecreaseCandyAmount(int amount)
+    {
+        _candyAmount -= amount;
+    }
+
 }

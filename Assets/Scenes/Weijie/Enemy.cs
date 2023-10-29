@@ -10,7 +10,9 @@ public class Enemy : MonoBehaviour
     [SerializeField] Transform[] patrolPoints;
     [SerializeField] Transform Player;
     public Animator animator;
+    public Candy CandyScore;
 
+    public int StealCandyAmount;
     public float lineOfSite; 
     NavMeshAgent agent;
 
@@ -70,7 +72,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.tag == "PatrolPoint")
+        if(collision.tag == "Interactable")
         {
             SetRandomPatrolPoint();
         }
@@ -95,9 +97,13 @@ public class Enemy : MonoBehaviour
         float temp = agent.speed; 
         agent.speed = 0;
         animator.SetBool("HitPlayer", true);
+        CandyScore.DecreaseCandyAmount(StealCandyAmount);
+        CandyScore.UpdateCandyAmount();
+        gameObject.GetComponent<Collider2D>().enabled = false;
         yield return new WaitForSeconds(5);
         animator.SetBool("HitPlayer", false);
         SetRandomPatrolPoint();
+        gameObject.GetComponent<Collider2D>().enabled = true;
         agent.speed = temp;
     }
 }

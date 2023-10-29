@@ -1,9 +1,10 @@
-# Welcome to our game GIMME CANDY!!! 🎃👻
+# Welcome to our game GIMME CANDY!!! 🎃🍭
 Link to game:      
 
-Creators: [Weijie Jiang](https://github.com/weijiej2964), [Rachel Briskman](https://github.com/TheSimmer101), [Sanila Chowdhury](https://github.com/sanilac6459), & [Maida Kucevic](https://github.com/maida5) 
+Creators: Weijie Jiang, Rachel Briskman, Sanila Chowdhury, & Maida Kucevic
 
 -----
+
 ### How to play our game:
 * You as a trick or treater will be going around houses getting as much candy as you can. 
 * For every candy you get, your score will increase.

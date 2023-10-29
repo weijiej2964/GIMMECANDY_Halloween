@@ -30,10 +30,12 @@ Creators: Weijie Jiang, Rachel Briskman, Sanila Chowdhury, & Maida Kucevic
   * [Tiny RPG Town Environment](https://assetstore.unity.com/packages/2d/environments/tiny-rpg-town-environment-88293)
   * [2D Pixel art pack - Rousette](https://assetstore.unity.com/packages/2d/characters/2d-pixel-art-pack-rousette-167698)
 * Sounds:
-  * Getting candy sound effect
-  * Kids laughing
-  * Main BGM
-  * Menu BGM
-  * Walking sound effect
+  * [Casual game SFX](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116) (walking/transition/button/dialogue)
+  * [Credit & Menu BGM](https://pixabay.com/music/scary-childrens-tunes-this-is-halloween-172354/) (Undertale by Toby Fox)
+  * [Game over BGM](https://pixabay.com/sound-effects/kl-music-box-game-over-ii-152200/) (Undertale by Toby Fox)
+  * Getting candy sound effect (Undertale by Toby Fox)
+  * Kids laughing (Undertale by Toby Fox)
+  * [Main BGM](https://pixabay.com/music/scary-childrens-tunes-happy-comedy-halloween-party-dance-for-kids-children-118581/) (Undertale by Toby Fox)
+  * Resetting houses (Undertale by Toby Fox)
 * System:
   * [Fantasy Wooden GUI: Free](https://assetstore.unity.com/packages/2d/gui/fantasy-wooden-gui-free-103811)

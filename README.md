@@ -9,11 +9,11 @@ Creators: Weijie Jiang, Rachel Briskman, Sanila Chowdhury, & Maida Kucevic
 * You as a trick or treater will be going around houses getting as much candy as you can. You have 5 minutes to do so.
 * For every candy you get, your score will increase.
 * While you’re trick or treating, avoid monsters that will try to steal your candy.
-* If you lose all your candy, the game will be over.
+* The game will be over once the timer is up or when you lose all your candy.
 * Use the arrows or WASD keys to move around. Press the key E to interact with the house. 
 * Anytime you interact with a house, a dialogue will pop up. Click next to move onto the next dialogue. They’re unskippable and you must remain at the house before receiving the candy.
 
-HAVE FUN!!!
+### HAVE FUN!!!
 
 -----
 ### Credits:
@@ -30,9 +30,10 @@ HAVE FUN!!!
   * [Tiny RPG Town Environment](https://assetstore.unity.com/packages/2d/environments/tiny-rpg-town-environment-88293)
   * [2D Pixel art pack - Rousette](https://assetstore.unity.com/packages/2d/characters/2d-pixel-art-pack-rousette-167698)
 * Sounds:
-  * [Annoying kids laugh](https://www.youtube.com/watch?v=59hvBxukCdI) (when player lose candy/encounter enemy)
-  * [Spooks of Halloween Town](https://www.youtube.com/watch?v=GDNumrX5HME) (background music)
-  * [Earning candy sound effect](https://themushroomkingdom.net/media/sm64/wav#google_vignette)
-  * [Transitions/dialogue/button sounds](https://assetstore.unity.com/packages/audio/sound-fx/free-casual-game-sfx-pack-54116)
+  * Getting candy sound effect
+  * Kids laughing
+  * Main BGM
+  * Menu BGM
+  * Walking sound effect
 * System:
   * [Fantasy Wooden GUI: Free](https://assetstore.unity.com/packages/2d/gui/fantasy-wooden-gui-free-103811)

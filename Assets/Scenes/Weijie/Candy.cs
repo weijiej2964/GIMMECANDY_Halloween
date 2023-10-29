@@ -17,7 +17,7 @@ public class Candy : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        _candyAmount = 0;
+        _candyAmount = 20;
         UpdateCandyAmount();
     }
 

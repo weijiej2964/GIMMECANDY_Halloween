@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Animations;
+using Unity.VisualScripting;
 
 public class ControlPlayer : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class ControlPlayer : MonoBehaviour
     SpriteRenderer spriteRenderer;
 
     Animator animator;
+
+    public GameObject Guidebox; 
     // Start is called before the first frame update
     void Start()
     {
@@ -83,5 +86,20 @@ public class ControlPlayer : MonoBehaviour
     public void PlayerDeathAnim()
     {
         animator.SetTrigger("CandyRanout");
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Interactable")
+        {
+            Guidebox.SetActive(true);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag == "Interactable")
+        {
+            Guidebox.SetActive(false);
+        }
     }
 }

@@ -32,7 +32,7 @@ public class Dialogue : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.E))
         {
             if (Lines != null && TextComponent.text == Lines[_index])
             {

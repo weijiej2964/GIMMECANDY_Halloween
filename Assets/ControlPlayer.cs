@@ -46,7 +46,7 @@ public class ControlPlayer : MonoBehaviour
                 success = TryMove(new Vector2(0,movementInput.y));
             }
             Debug.Log(success);
-            animator.SetBool("isMoving",!success);
+            animator.SetBool("isMoving",success);
         
         }
         else{

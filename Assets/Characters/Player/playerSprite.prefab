@@ -109,6 +109,7 @@ MonoBehaviour:
   lines: []
   CandyScore: {fileID: 0}
   CandyReward: 0
+  ExitDialogueSFX: {fileID: 0}
 --- !u!1 &5743602328015310616
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,9 +125,9 @@ GameObject:
   - component: {fileID: 5218310610678409402}
   - component: {fileID: 2017465048088669412}
   - component: {fileID: 1990266379614089476}
-  - component: {fileID: 1688875876630787432}
   - component: {fileID: 4653619564892066927}
   - component: {fileID: 3101676567765204695}
+  - component: {fileID: 6143359255151221959}
   m_Layer: 0
   m_Name: playerSprite
   m_TagString: Player
@@ -375,34 +376,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12854062, y: 0.02471158}
   m_EdgeRadius: 0
---- !u!114 &1688875876630787432
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5743602328015310616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed21b4fd7fbf73843b511eac59746d38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  collisionOffset: 0.001
-  movementFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 1
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!95 &4653619564892066927
 Animator:
   serializedVersion: 5
@@ -468,3 +441,31 @@ MonoBehaviour:
     mipBias: 0
     varianceClampScale: 0.9
     contrastAdaptiveSharpening: 0
+--- !u!114 &6143359255151221959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5743602328015310616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed21b4fd7fbf73843b511eac59746d38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 1
+  collisionOffset: 0.05
+  movementFilter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0

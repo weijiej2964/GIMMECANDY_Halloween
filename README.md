@@ -11,7 +11,7 @@ Creators: Weijie Jiang, Rachel Briskman, Sanila Chowdhury, & Maida Kucevic
 * While you’re trick or treating, avoid monsters that will try to steal your candy.
 * The game will be over once the timer is up or when you lose all your candy.
 * Use the arrows or WASD keys to move around. Press the key E to interact with the house. 
-* Anytime you interact with a house, a dialogue will pop up. Click next to move onto the next dialogue. They’re unskippable and you must remain at the house before receiving the candy.
+* Anytime you interact with a house, a dialogue will pop up. Keep pressing E to move onto the next dialogue. They’re unskippable and you must remain at the house before receive the candy.
 
 ### HAVE FUN!!!
 

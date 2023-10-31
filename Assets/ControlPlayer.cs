@@ -9,6 +9,7 @@ public class ControlPlayer : MonoBehaviour
 {
     public float moveSpeed = 1f;
     public float collisionOffset = 0.05f;
+    public bool death = false; 
     public ContactFilter2D movementFilter;
     List<RaycastHit2D> castCollisions = new List<RaycastHit2D>();
     //vector stores 2 values, x & y
@@ -86,6 +87,8 @@ public class ControlPlayer : MonoBehaviour
     public void PlayerDeathAnim()
     {
         animator.SetTrigger("CandyRanout");
+        Guidebox.SetActive(false);
+        death = true; 
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

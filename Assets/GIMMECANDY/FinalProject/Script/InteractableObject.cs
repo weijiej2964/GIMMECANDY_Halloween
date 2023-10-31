@@ -7,7 +7,7 @@ public class InteractableObject : CollidableObject
     private bool z_Interacted = false;
     private bool z_DialogueComplete = false;
     private Dialogue dialogue;
-
+    public ControlPlayer player;
     public Canvas canvas; 
     public GameObject DialogueBox;
     private GameObject newDialogueObject;
@@ -16,12 +16,11 @@ public class InteractableObject : CollidableObject
     public Candy CandyScore; 
     public int CandyReward;
 
-    [SerializeField] private AudioSource ExitDialogueSFX; 
-
+    [SerializeField] private AudioSource ExitDialogueSFX;
 
     protected override void OnCollided(GameObject collidedObject)
     {
-        if(Input.GetKey(KeyCode.E))
+        if(Input.GetKey(KeyCode.E) && !player.death)
         {
             OnInteract();
         }

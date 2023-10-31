@@ -9,7 +9,7 @@ public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI TextComponent;
     public float TextSpeed;
-    public GameObject GameoverPanel; 
+    public ControlPlayer player; 
 
     private GameObject interactableObject;
     private int _index;
@@ -21,13 +21,13 @@ public class Dialogue : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     { 
-        GameoverPanel = GameObject.Find("Canvas/Gameover");
+        player = GameObject.Find("playerSprite").GetComponent<ControlPlayer>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (GameoverPanel != null && GameoverPanel.activeSelf)
+        if (player.death)
         {
             Destroy(gameObject);
         }

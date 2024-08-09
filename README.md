@@ -1,7 +1,7 @@
 # Welcome to our game GIMME CANDY!!! 🎃🍭
 Link to game: https://caipan.itch.io/gimme-candy 
 
-Creators: Weijie Jiang, Rachel Briskman, Sanila Chowdhury, & Maida Kucevic
+Creators: [Weijie Jiang](https://github.com/weijiej2964), [Rachel Briskman](https://github.com/TheSimmer101), [Sanila Chowdhury](https://github.com/sanilac6459), [Maida Kucevic](https://github.com/maida5)
 
 -----
 

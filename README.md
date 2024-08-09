@@ -3,6 +3,8 @@ Link to game: https://caipan.itch.io/gimme-candy
 
 Creators: [Weijie Jiang](https://github.com/weijiej2964), [Rachel Briskman](https://github.com/TheSimmer101), [Sanila Chowdhury](https://github.com/sanilac6459), and [Maida Kucevic](https://github.com/maida5)
 
+Tool: Unity
+
 -----
 
 ### How to play our game:

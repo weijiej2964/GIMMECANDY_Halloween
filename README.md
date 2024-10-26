@@ -1,5 +1,5 @@
 # Welcome to our game GIMME CANDY!!! 🎃🍭
-Link to game: https://caipan.itch.io/gimme-candy 
+[Link to game](https://caipan.itch.io/gimme-candy) 
 
 Creators:
 * [Weijie Jiang](https://github.com/weijiej2964)

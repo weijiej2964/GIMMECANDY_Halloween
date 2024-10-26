@@ -11,6 +11,7 @@ Creators:
 * [Maida Kucevic](https://github.com/maida5)
 
 -----
+As part of the Daedalus Honors Scholar Program at Hunter College, we took part in the Halloween Hackathon, where we developed a unique and interactive trick-or-treat game featuring enemies that steal candies from trick-or-treaters. We used Unity and its asset store to create engaging gameplay mechanics, animations, and a dynamic interface, to enhance the overall gaming experience.
 
 ### How to play our game:
 * You as a trick or treater will be going around houses getting as much candy as you can. You have 5 minutes to do so. Your starting amount will be 20 candies.

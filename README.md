@@ -1,17 +1,5 @@
 # Welcome to our game GIMME CANDY!!! 🎃🍭
-[Link to game](https://caipan.itch.io/gimme-candy) 
 
-
-
-
-Creators:
-* [Weijie Jiang](https://github.com/weijiej2964)
-* [Rachel Briskman](https://github.com/TheSimmer101)
-* [Sanila Chowdhury](https://github.com/sanilac6459)
-* [Maida Kucevic](https://github.com/maida5)
-
------
-### Purpose:
 As part of the Daedalus Honors Scholar Program at Hunter College, we took part in the Halloween Hackathon, where we developed a unique and interactive trick-or-treat game featuring enemies that steal candies from trick-or-treaters. We used Unity and its asset store to create engaging gameplay mechanics, animations, and a dynamic interface, to enhance the overall gaming experience.
 
 ### How to play our game:
@@ -23,6 +11,7 @@ As part of the Daedalus Honors Scholar Program at Hunter College, we took part i
 * Anytime you interact with a house, a dialogue will pop up. Keep pressing E to move onto the next dialogue. They’re unskippable and you must remain at the house before receive the candy.
 
 ### HAVE FUN!!!
+[Link to game](https://caipan.itch.io/gimme-candy) 
 
 -----
 ### Credits:

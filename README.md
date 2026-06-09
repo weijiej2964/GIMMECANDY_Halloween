@@ -10,14 +10,14 @@
 
 ## 🕹️ Gameplay Overview
 You are a trick-or-treater on a mission to collect as much candy as 
-possible before time runs out — but watch out for monsters trying to 
+possible before time runs out — but watch out for pranksters trying to 
 steal your stash.
 
 - **Goal:** Collect as much candy as possible within 5 minutes
 - **Starting candy:** 20 pieces - by talking to the mailbox
 - **Game over:** Timer runs out or you lose all your candy
 - Candy collected increases your score
-- Avoid monsters that will steal your candy
+- Avoid pranksters that will steal your candy
 
 ---
 

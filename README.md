@@ -1,17 +1,54 @@
-# Welcome to our game GIMME CANDY!!! 🎃🍭
+# Gimme Candy 🎃🍭
 
-As part of the Daedalus Honors Scholar Program at Hunter College, we took part in the Halloween Hackathon, where we developed a unique and interactive trick-or-treat game featuring enemies that steal candies from trick-or-treaters. We used Unity and its asset store to create engaging gameplay mechanics, animations, and a dynamic interface, to enhance the overall gaming experience.
+> A Halloween-themed trick-or-treat game built in Unity for the 
+> **Daedalus Honors Scholar Halloween Hackathon** at Hunter College
 
-### How to play our game:
-* You as a trick or treater will be going around houses getting as much candy as you can. You have 5 minutes to do so. Your starting amount will be 20 candies.
-* For every candy you get, your score will increase.
-* While you’re trick or treating, avoid monsters that will try to steal your candy.
-* The game will be over once the timer is up or when you lose all your candy.
-* Use the arrows or WASD keys to move around. Press the key E to interact with the house. 
-* Anytime you interact with a house, a dialogue will pop up. Keep pressing E to move onto the next dialogue. They’re unskippable and you must remain at the house before receive the candy.
+## 🎮 Play the Game
+[Play on itch.io](https://caipan.itch.io/gimme-candy)
 
-### HAVE FUN!!!
-[Link to game](https://caipan.itch.io/gimme-candy) 
+---
+
+## 🕹️ Gameplay Overview
+You are a trick-or-treater on a mission to collect as much candy as 
+possible before time runs out — but watch out for monsters trying to 
+steal your stash.
+
+- **Goal:** Collect as much candy as possible within 5 minutes
+- **Starting candy:** 20 pieces
+- **Game over:** Timer runs out or you lose all your candy
+- Candy collected increases your score
+- Avoid monsters that will steal your candy
+
+---
+
+## 🎯 Controls
+
+| Action | Key |
+|--------|-----|
+| Move | Arrow Keys or WASD |
+| Interact with house | E |
+
+> Interact with houses to trigger dialogue and collect candy.
+> Dialogues are unskippable — stay at the house until they finish.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Game Engine | Unity |
+| Assets | Unity Asset Store |
+| Gameplay | C# |
+| Platform | itch.io |
+
+---
+
+## ✨ Features
+- Dynamic enemy AI that chases and steals candy from the player
+- Interactive house dialogue system with candy reward mechanics
+- Countdown timer with real-time score tracking
+- Animations and visual effects for immersive gameplay
 
 -----
 ### Credits:
